@@ -70,7 +70,7 @@ const languages = [
 
 const Certifications = () => {
   return (
-    <section id='certifications' className='py-20 px-4 bg-muted/20'>
+    <section id='certifications' className='py-20 px-6 bg-muted/20'>
       <div className='max-w-6xl mx-auto'>
         <motion.div
           initial={{ opacity: 0, y: 20 }}

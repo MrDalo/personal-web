@@ -3,7 +3,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className='py-12 px-4 border-t border-border/50'>
+    <footer className='py-12 px-6 border-t border-border/50'>
       <div className='max-w-4xl mx-auto text-center'>
         <motion.div
           initial={{ opacity: 0, y: 20 }}

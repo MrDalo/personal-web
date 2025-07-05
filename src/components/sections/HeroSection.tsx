@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
-import { ArrowRight, Download, Clock, Layers, Users, Code2 } from 'lucide-react'
+import { ArrowRight, Download, Clock, Users, Code2 } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import CountUp from '../common/CountUp'
 
@@ -10,13 +10,6 @@ const stats = [
   { number: 2, suffix: '+', label: 'Years Experience', icon: Clock },
   { number: 5, suffix: '+', label: 'React & Next.js Projects', icon: Code2 },
   { number: 2, suffix: '', label: 'Freelance Projects', icon: Users },
-  {
-    number: 1,
-    suffix: '',
-    label: 'Modern Stack Expert',
-    icon: Layers,
-    customText: 'Next.js + TS',
-  },
 ]
 
 const HeroSection = () => {
@@ -55,7 +48,7 @@ const HeroSection = () => {
   }, [])
 
   return (
-    <section className='relative min-h-screen flex items-center justify-center px-4 py-20 overflow-hidden'>
+    <section className='relative min-h-screen flex items-center justify-center md:px-12 px-6 py-20 overflow-hidden'>
       {/* Main Content */}
       <div className='relative max-w-6xl mx-auto'>
         <div className='grid grid-cols-1 lg:grid-cols-12 gap-8 items-center'>
@@ -208,11 +201,7 @@ const HeroSection = () => {
                       animate={{ scale: 1 }}
                       transition={{ delay: 2 + index * 0.1, type: 'spring' }}
                     >
-                      {stat.customText ? (
-                        <span className='text-sm'>{stat.customText}</span>
-                      ) : (
-                        <CountUp end={stat.number} suffix={stat.suffix} />
-                      )}
+                      <CountUp end={stat.number} suffix={stat.suffix} />
                     </motion.div>
                   </div>
                   <div className='text-xs text-muted-foreground font-medium'>
