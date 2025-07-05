@@ -189,6 +189,7 @@ const Projects = () => {
                           href={project.liveUrl}
                           target='_blank'
                           rel='noopener noreferrer'
+                          aria-label={`Visit ${project.title} live website`}
                           className='h-8 w-8 p-0 opacity-0 group-hover:opacity-100 transition-opacity hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 size-9 inline-flex items-center justify-center rounded-sm'
                         >
                           <ExternalLink className='h-4 w-4' />
@@ -199,6 +200,7 @@ const Projects = () => {
                           href={project.githubUrl}
                           target='_blank'
                           rel='noopener noreferrer'
+                          aria-label={`View ${project.title} source code on GitHub`}
                           className='h-8 w-8 p-0 opacity-0 group-hover:opacity-100 transition-opacity hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 size-9 inline-flex items-center justify-center rounded-sm'
                         >
                           <Github className='h-4 w-4' />

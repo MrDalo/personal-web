@@ -32,6 +32,7 @@ const ScrollToTopButton = () => {
       <Button
         variant='outline'
         size='icon'
+        aria-label='Scroll to top'
         className='h-12 w-12 rounded-full shadow-lg cursor-pointer bg-background/80 hover:scale-110 backdrop-blur-sm hover:bg-background/90 transition-all duration-300'
         onClick={scrollToTop}
       >
