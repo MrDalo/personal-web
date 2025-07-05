@@ -126,13 +126,10 @@ const Education = () => {
                     </Badge>
 
                     {edu.award && (
-                      <Badge
-                        variant='outline'
-                        className='text-xs bg-gradient-to-r from-yellow-50 to-orange-50 border-yellow-200 text-yellow-800 dark:from-yellow-900/20 dark:to-orange-900/20 dark:border-yellow-800 dark:text-yellow-200'
-                      >
-                        <Award className='h-3 w-3 mr-1' />
-                        {edu.award}
-                      </Badge>
+                      <div className='inline-flex items-center gap-1 px-2 py-1 text-xs bg-gradient-to-r from-yellow-50 to-orange-50 border border-yellow-200 text-yellow-800 dark:from-yellow-900/20 dark:to-orange-900/20 dark:border-yellow-800 dark:text-yellow-200 rounded-md max-w-full'>
+                        <Award className='h-3 w-3 flex-shrink-0' />
+                        <span className='break-words'>{edu.award}</span>
+                      </div>
                     )}
                   </div>
 
