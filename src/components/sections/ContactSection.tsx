@@ -9,26 +9,20 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card'
-import { Mail, Github, Linkedin, Twitter } from 'lucide-react'
+import { Mail, Github, Linkedin } from 'lucide-react'
 
 const socialLinks = [
   {
     name: 'GitHub',
     icon: Github,
-    url: 'https://github.com/alexchen',
+    url: 'https://github.com/MrDalo',
     color: 'hover:text-gray-600 dark:hover:text-gray-400',
   },
   {
     name: 'LinkedIn',
     icon: Linkedin,
-    url: 'https://linkedin.com/in/alexchen',
+    url: 'https://sk.linkedin.com/in/dalibor-kralik',
     color: 'hover:text-blue-600 dark:hover:text-blue-400',
-  },
-  {
-    name: 'Twitter',
-    icon: Twitter,
-    url: 'https://twitter.com/alexchen',
-    color: 'hover:text-blue-500 dark:hover:text-blue-400',
   },
 ]
 
@@ -72,7 +66,7 @@ const ContactSection = () => {
                 <Button
                   size='lg'
                   className='w-full'
-                  onClick={() => window.open('mailto:alex@example.com')}
+                  onClick={() => window.open('mailto:dadokralik@gmail.com')}
                 >
                   Send Email
                 </Button>

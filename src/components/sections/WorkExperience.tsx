@@ -118,7 +118,7 @@ const WorkExperience = () => {
             >
               {/* Timeline Line */}
               {index < experiences.length - 1 && (
-                <div className='absolute left-6 top-24 w-0.5 h-full bg-border -translate-x-1/2 hidden md:block' />
+                <div className='absolute left-6 top-14 w-0.5 h-full bg-border -translate-x-1/2 hidden md:block' />
               )}
 
               {/* Timeline Dot */}

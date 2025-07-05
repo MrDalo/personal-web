@@ -10,6 +10,7 @@ import {
 } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Calendar, MapPin, GraduationCap, Award } from 'lucide-react'
+import Link from 'next/link'
 
 const education = [
   {
@@ -68,11 +69,11 @@ const Education = () => {
             >
               {/* Timeline Line */}
               {index < education.length - 1 && (
-                <div className='absolute left-6 top-24 w-0.5 h-full bg-border -translate-x-1/2 hidden md:block' />
+                <div className='absolute left-6 top-10 w-0.5 h-full bg-border -translate-x-1/2 hidden md:block' />
               )}
 
               {/* Timeline Dot */}
-              <div className='absolute left-6 top-8 w-3 h-3 bg-primary rounded-full -translate-x-1/2 z-10 hidden md:block' />
+              <div className='absolute left-6 top-4 w-3 h-3 bg-primary rounded-full -translate-x-1/2 z-10 hidden md:block' />
 
               <Card className='ml-0 md:ml-16 hover:shadow-lg transition-all duration-300'>
                 <CardHeader>
@@ -137,12 +138,16 @@ const Education = () => {
 
                   {edu.award && (
                     <div className='mt-3 p-3 bg-gradient-to-r from-yellow-50 to-orange-50 dark:from-yellow-900/10 dark:to-orange-900/10 rounded-lg border border-yellow-200 dark:border-yellow-800'>
-                      <div className='flex items-center gap-2 text-sm'>
+                      <Link
+                        href='https://www.vut.cz/vut/aktuality-f19528/rektor-ocenil-na-24-akademickem-shromazdeni-vyznamne-osobnosti-vut-d245507'
+                        className='flex items-center gap-2 text-sm'
+                        target='_blank'
+                      >
                         <Award className='h-4 w-4 text-yellow-600 dark:text-yellow-400' />
                         <span className='font-medium text-yellow-800 dark:text-yellow-200'>
                           Recognition for Outstanding Academic Achievement
                         </span>
-                      </div>
+                      </Link>
                     </div>
                   )}
                 </CardContent>

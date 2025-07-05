@@ -11,9 +11,6 @@ const Footer = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <p className='text-muted-foreground mb-4'>
-            Built with React, Next.js, and Framer Motion
-          </p>
           <p className='text-sm text-muted-foreground'>
             © 2025 Dalibor Králik. All rights reserved.
           </p>

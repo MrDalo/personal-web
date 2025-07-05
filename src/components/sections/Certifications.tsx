@@ -28,7 +28,7 @@ const certifications = [
     description:
       'International Erasmus+ project certifications for youth work and collaboration',
     organization: 'European Commission',
-    year: '2020-2021',
+    year: '2017-2023',
     icon: User,
     color: 'from-blue-500 to-purple-500',
   },

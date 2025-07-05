@@ -39,33 +39,6 @@ const AboutSection = () => {
                 alt='Dalibor Králik'
                 className='w-full h-full object-cover object-center rounded-2xl shadow-xl'
               />
-
-              {/* Floating elements */}
-              <motion.div
-                className='absolute -top-4 -right-4 w-8 h-8 bg-blue-500 rounded-full opacity-80'
-                animate={{
-                  scale: [1, 1.2, 1],
-                  rotate: [0, 180, 360],
-                }}
-                transition={{
-                  duration: 4,
-                  repeat: Infinity,
-                  ease: 'easeInOut',
-                }}
-              />
-              <motion.div
-                className='absolute -bottom-4 -left-4 w-6 h-6 bg-purple-500 rounded-full opacity-70'
-                animate={{
-                  scale: [1, 1.3, 1],
-                  rotate: [0, -180, -360],
-                }}
-                transition={{
-                  duration: 3,
-                  repeat: Infinity,
-                  ease: 'easeInOut',
-                  delay: 0.5,
-                }}
-              />
             </div>
           </motion.div>
 
@@ -79,19 +52,20 @@ const AboutSection = () => {
             <div>
               <h3 className='mb-4'>My Journey</h3>
               <p className='text-muted-foreground leading-relaxed mb-4'>
-                With over 5 years of experience in front-end development,
-                I&apos;ve had the privilege of working with startups and
-                established companies across Central Europe to bring their
-                digital visions to life. My passion lies in creating interfaces
-                that are not just visually appealing, but also highly functional
-                and accessible.
+                With over 2 years of experience in modern front-end development,
+                I&apos;ve successfully delivered projects for universities,
+                Fortune 500 companies, and innovative startups across Central
+                Europe. My passion lies in creating interfaces that are not just
+                visually appealing, but also highly functional, accessible, and
+                performant.
               </p>
               <p className='text-muted-foreground leading-relaxed'>
-                Based in Slovakia, I believe in writing clean, maintainable code
-                and staying up-to-date with the latest technologies and best
-                practices. When I&apos;m not coding, you can find me exploring
-                new design trends, contributing to open-source projects, or
-                mentoring aspiring developers in my community.
+                Based in Slovakia and Czech Republic, I specialize in React,
+                Next.js, and TypeScript, delivering high-performance
+                applications that scale. When I&apos;m not coding, you can find
+                me improving my knowledge in project management, team
+                management, and leadership. I&apos;m also interested in Web3 and
+                AI technologies.
               </p>
             </div>
 
@@ -104,7 +78,7 @@ const AboutSection = () => {
                   transition={{ duration: 0.2 }}
                 >
                   <motion.span className='w-2 h-2 bg-blue-500 rounded-full mr-3 group-hover:scale-125 transition-transform' />
-                  Performance optimization and Core Web Vitals
+                  Performance optimization and front-end testing
                 </motion.li>
                 <motion.li
                   className='flex items-center group cursor-default'

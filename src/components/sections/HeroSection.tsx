@@ -141,7 +141,7 @@ const HeroSection = () => {
                 >
                   <Button
                     size='lg'
-                    className='px-8 py-6 text-lg rounded-full bg-blue-600 shadow-lg hover:shadow-xl transition-all duration-300 relative overflow-hidden'
+                    className='px-8 py-6 text-lg rounded-full cursor-pointer bg-blue-600 shadow-lg hover:shadow-xl transition-all duration-300 relative overflow-hidden'
                     onClick={() =>
                       document
                         .getElementById('projects')
@@ -168,7 +168,7 @@ const HeroSection = () => {
                   <Button
                     variant='outline'
                     size='lg'
-                    className='px-8 py-6 text-lg rounded-full border-2 backdrop-blur-sm bg-background/50 hover:bg-background/80 transition-all duration-300'
+                    className='px-8 py-6 text-lg cursor-pointer rounded-full border-2 backdrop-blur-sm bg-background/50 hover:bg-background/80 transition-all duration-300'
                     onClick={() =>
                       document
                         .getElementById('contact')
