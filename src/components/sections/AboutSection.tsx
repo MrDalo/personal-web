@@ -34,7 +34,7 @@ const AboutSection = () => {
               <div className='absolute -inset-2 bg-gradient-to-br from-blue-200/50 to-purple-200/50 dark:from-blue-800/30 dark:to-purple-800/30 rounded-2xl -z-10' />
 
               <Image
-                src='/university-photo.jpg'
+                src='/university-photo.avif'
                 fill
                 alt='Dalibor Králik'
                 className='w-full h-full object-cover object-center rounded-2xl shadow-xl'
