@@ -18,7 +18,7 @@ import {
   BarChart,
   Calendar,
 } from 'lucide-react'
-import { ImageWithFallback } from '../ImageWIthFallback'
+import { ImageWithFallback } from '../common/ImageWIthFallback'
 
 const projects = [
   {
