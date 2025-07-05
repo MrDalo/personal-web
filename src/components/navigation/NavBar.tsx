@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 interface NavigationItem {
   label: string
@@ -40,7 +41,12 @@ const NavBar = ({
             onClick={scrollToTop}
             className='cursor-pointer'
           >
-            <span className='text-lg font-medium'>DK</span>
+            <Image
+              src='/logo.png'
+              alt='Dalibor Králik'
+              width={32}
+              height={32}
+            />
           </motion.div>
 
           {/* Desktop Navigation */}
@@ -58,7 +64,7 @@ const NavBar = ({
 
           {/* Mobile Menu Button */}
           <motion.button
-            className='md:hidden relative w-6 h-6 flex flex-col justify-center items-center'
+            className='md:hidden relative w-6 h-6 flex flex-col justify-center items-center cursor-pointer'
             onClick={onToggleMobileMenu}
             whileTap={{ scale: 0.9 }}
           >

@@ -47,7 +47,7 @@ const MobileMenu = ({
               <div className='flex items-center justify-between p-6 border-b border-border/50'>
                 <span className='text-lg font-medium'>Navigation</span>
                 <motion.button
-                  className='relative w-6 h-6 flex flex-col justify-center items-center'
+                  className='relative w-6 h-6 flex flex-col justify-center items-center cursor-pointer'
                   onClick={onClose}
                   whileTap={{ scale: 0.9 }}
                 >
@@ -69,7 +69,7 @@ const MobileMenu = ({
                     <motion.button
                       key={item.id}
                       onClick={() => onScrollToSection(item.id)}
-                      className='block w-full text-left text-lg font-medium text-muted-foreground hover:text-foreground transition-colors'
+                      className='block w-full text-left text-lg font-medium cursor-pointer text-muted-foreground hover:text-foreground transition-colors'
                       initial={{ opacity: 0, x: 20 }}
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ delay: index * 0.1 + 0.2 }}

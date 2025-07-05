@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button'
 import { ArrowRight, Download, Clock, Users, Code2 } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import CountUp from '../common/CountUp'
+import Link from 'next/link'
 
 const stats = [
   { number: 2, suffix: '+', label: 'Years Experience', icon: Clock },
@@ -158,19 +159,14 @@ const HeroSection = () => {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <Button
-                    variant='outline'
-                    size='lg'
-                    className='px-8 py-6 text-lg cursor-pointer rounded-full border-2 backdrop-blur-sm bg-background/50 hover:bg-background/80 transition-all duration-300'
-                    onClick={() =>
-                      document
-                        .getElementById('contact')
-                        ?.scrollIntoView({ behavior: 'smooth' })
-                    }
+                  <Link
+                    href='/Dalibor_kralik_CV.pdf'
+                    download='Dalibor_kralik_CV.pdf'
+                    className='inline-flex items-center justify-center px-8 py-2 text-lg rounded-full border-2 backdrop-blur-sm bg-background/50 hover:bg-background/80 transition-all duration-300 cursor-pointer'
                   >
                     <Download className='mr-2 h-5 w-5' />
                     Download CV
-                  </Button>
+                  </Link>
                 </motion.div>
               </motion.div>
             </motion.div>
