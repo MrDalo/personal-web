@@ -160,8 +160,8 @@ const HeroSection = () => {
                   whileTap={{ scale: 0.95 }}
                 >
                   <Link
-                    href='/Dalibor_kralik_CV.pdf'
-                    download='Dalibor_kralik_CV.pdf'
+                    href='/Dalibor_Kralik_CV.pdf'
+                    download='Dalibor_Kralik_CV.pdf'
                     className='inline-flex items-center justify-center px-8 py-2 text-lg rounded-full border-2 bg-background/50 transition-all duration-300 cursor-pointer'
                   >
                     <Download className='mr-2 h-5 w-5' />
