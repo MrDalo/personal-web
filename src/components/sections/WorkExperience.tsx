@@ -16,7 +16,7 @@ const experiences = [
     id: 1,
     title: 'Front-End Developer',
     company: 'Deutsche Telekom Services Europe',
-    location: 'Slovakia',
+    location: 'Brno, Czech Republic',
     duration: '01/2024 - Present',
     description:
       'Part of the AI Shared Services team, built an internal chatbot app scaled to hundreds of users. Acted as main front-end developer and collaborated with AI researchers and data scientists to deliver cutting-edge solutions.',
