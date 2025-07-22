@@ -39,7 +39,7 @@ const projects = [
       'Shadcn UI',
       'React Query',
     ],
-    liveUrl: 'https://crypto-forge-app.vercel.app/token-creator',
+    liveUrl: 'https://crypto-forge-app.vercel.app',
     githubUrl: '',
     icon: Zap,
     category: 'Web3 App',
