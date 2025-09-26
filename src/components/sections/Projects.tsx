@@ -24,7 +24,7 @@ import Link from 'next/link'
 const projects = [
   {
     id: 1,
-    title: 'CryptoForge',
+    title: 'CloakForge',
     description:
       'Web3 application for interacting with the Solana blockchain. Features token minting, burning, and multisend functionality with a beautiful, responsive interface.',
     image:
@@ -39,7 +39,7 @@ const projects = [
       'Shadcn UI',
       'React Query',
     ],
-    liveUrl: 'https://crypto-forge-app.vercel.app',
+    liveUrl: 'https://cloakforge.vercel.app',
     githubUrl: '',
     icon: Zap,
     category: 'Web3 App',
