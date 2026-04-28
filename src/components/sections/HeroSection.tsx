@@ -8,7 +8,7 @@ import CountUp from '../common/CountUp'
 import Link from 'next/link'
 
 const stats = [
-  { number: 2, suffix: '+', label: 'Years Experience', icon: Clock },
+  { number: 4, suffix: '+', label: 'Years Experience', icon: Clock },
   { number: 5, suffix: '+', label: 'React & Next.js Projects', icon: Code2 },
   { number: 2, suffix: '', label: 'Freelance Projects', icon: Users },
 ]

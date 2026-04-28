@@ -52,7 +52,7 @@ const AboutSection = () => {
             <div>
               <h3 className='mb-4'>My Journey</h3>
               <p className='text-muted-foreground leading-relaxed mb-4'>
-                With over 2 years of experience in modern front-end development,
+                With over 4 years of experience in modern front-end development,
                 I&apos;ve successfully delivered projects for universities,
                 Fortune 500 companies, and innovative startups across Central
                 Europe. My passion lies in creating interfaces that are not just
@@ -72,6 +72,14 @@ const AboutSection = () => {
             <div>
               <h4 className='mb-3'>What I Focus On</h4>
               <ul className='space-y-3 text-muted-foreground'>
+                <motion.li
+                  className='flex items-center group cursor-default'
+                  whileHover={{ x: 4 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  <motion.span className='w-2 h-2 bg-yellow-500 rounded-full mr-3 group-hover:scale-125 transition-transform' />
+                  Integration of the AI into the development workflow
+                </motion.li>
                 <motion.li
                   className='flex items-center group cursor-default'
                   whileHover={{ x: 4 }}

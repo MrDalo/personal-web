@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: 'Dalibor Králik - Front-end Developer',
   description:
-    'Front-end developer specializing in React, Next.js, and TypeScript. Creating performant, beautiful, and accessible web applications with over 2 years of experience.',
+    'Front-end developer specializing in React, Next.js, and TypeScript. Creating performant, beautiful, and accessible web applications with over 4 years of experience.',
   keywords: [
     'front-end developer',
     'react',

@@ -12,7 +12,7 @@ const Footer = () => {
           viewport={{ once: true }}
         >
           <p className='text-sm text-muted-foreground'>
-            © 2025 Dalibor Králik. All rights reserved.
+            © 2026 Dalibor Králik. All rights reserved.
           </p>
         </motion.div>
       </div>

@@ -14,10 +14,37 @@ import { Calendar, MapPin, Building2 } from 'lucide-react'
 const experiences = [
   {
     id: 1,
+    title: 'Senior Software Developer',
+    company: 'SONET (member of Payten)',
+    location: 'Brno, Czech Republic',
+    duration: '03/2026 - Present',
+    description:
+      'Focused on front-end development and integration of AI into the software development lifecycle. Leading the implementation of an internal component library and driving application transformation from legacy tech-stacks to modern React + TypeScript.',
+    tech: [
+      'React',
+      'TypeScript',
+      'TailwindCSS',
+      'Tanstack React Query',
+      'Storybook',
+      'Zod',
+      'Radix UI',
+      'React Hook Form',
+      'Vitest',
+      'Lighthouse',
+    ],
+    achievements: [
+      'Built an internal component library fully covered by tests, with CI/CD deployment and distribution as an npm package',
+      'Led application transformation from legacy tech-stack to React + TypeScript, focused on security, accessibility and ergonomics',
+      'Configured AI multi-agent team workflows using Codex, Cursor and GitHub Copilot',
+      'Implemented an MCP server for real-time interaction with remote MSSQL databases',
+    ],
+  },
+  {
+    id: 2,
     title: 'Front-End Developer',
     company: 'Deutsche Telekom Services Europe',
     location: 'Brno, Czech Republic',
-    duration: '01/2024 - Present',
+    duration: '01/2024 - 02/2026',
     description:
       'Part of the AI Shared Services team, built an internal chatbot app scaled to hundreds of users. Acted as main front-end developer and collaborated with AI researchers and data scientists to deliver cutting-edge solutions.',
     tech: [
@@ -44,7 +71,7 @@ const experiences = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     title: 'SAP BW Software Developer',
     company: 'CVIS BUT',
     location: 'Brno, Czech Republic',
@@ -66,7 +93,7 @@ const experiences = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     title: 'Project Assistant',
     company: 'EduEra NGO',
     location: 'Remote',
