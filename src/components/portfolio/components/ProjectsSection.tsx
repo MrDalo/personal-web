@@ -1,5 +1,9 @@
+'use client'
+
+import { useRef } from 'react'
 import { ArrowUpRight, Github } from 'lucide-react'
 import { projects } from '../data/portfolio-data'
+import useProjectAnimations from '../hooks/useProjectAnimations'
 import {
   sectionClass,
   sectionKickerClass,
@@ -114,36 +118,42 @@ const ProjectCard = ({ project, layoutClass }: ProjectCardProps) => (
   </article>
 )
 
-const ProjectsSection = () => (
-  <section id='projects' className={sectionClass}>
-    <div
-      className='mb-[clamp(3rem,7vw,6.5rem)] grid grid-cols-1 items-end gap-6 min-[1025px]:grid-cols-[minmax(0,1.7fr)_minmax(260px,0.55fr)] min-[1025px]:gap-16'
-      data-reveal
-    >
-      <div>
-        <p className={`${sectionKickerClass} mb-[1.4rem] text-muted`}>
-          Selected work / 2023–2026
-        </p>
-        <h2 className={sectionTitleClass}>
-          Products I’ve helped bring to life.
-        </h2>
-      </div>
-      <p className='m-0 text-[0.96rem] leading-[1.65] text-muted'>
-        Selected research, client work, and independent products spanning Solana
-        workflows, testing infrastructure, and production analytics.
-      </p>
-    </div>
+const ProjectsSection = () => {
+  const rootRef = useRef<HTMLElement>(null)
 
-    <div className='grid grid-cols-12 gap-x-0 gap-y-18 min-[1025px]:gap-x-[clamp(1rem,2.5vw,2.5rem)] min-[1025px]:gap-y-[clamp(1.5rem,4vw,4rem)]'>
-      {projects.map((project, index) => (
-        <ProjectCard
-          key={project.number}
-          project={project}
-          layoutClass={projectLayoutClasses[index]}
-        />
-      ))}
-    </div>
-  </section>
-)
+  useProjectAnimations(rootRef)
+
+  return (
+    <section ref={rootRef} id='projects' className={sectionClass}>
+      <div
+        className='mb-[clamp(3rem,7vw,6.5rem)] grid grid-cols-1 items-end gap-6 min-[1025px]:grid-cols-[minmax(0,1.7fr)_minmax(260px,0.55fr)] min-[1025px]:gap-16'
+        data-reveal
+      >
+        <div>
+          <p className={`${sectionKickerClass} mb-[1.4rem] text-muted`}>
+            Selected work / 2023–2026
+          </p>
+          <h2 className={sectionTitleClass}>
+            Products I’ve helped bring to life.
+          </h2>
+        </div>
+        <p className='m-0 text-[0.96rem] leading-[1.65] text-muted'>
+          Selected research, client work, and independent products spanning
+          Solana workflows, testing infrastructure, and production analytics.
+        </p>
+      </div>
+
+      <div className='grid grid-cols-12 gap-x-0 gap-y-18 min-[1025px]:gap-x-[clamp(1rem,2.5vw,2.5rem)] min-[1025px]:gap-y-[clamp(1.5rem,4vw,4rem)]'>
+        {projects.map((project, index) => (
+          <ProjectCard
+            key={project.number}
+            project={project}
+            layoutClass={projectLayoutClasses[index]}
+          />
+        ))}
+      </div>
+    </section>
+  )
+}
 
 export default ProjectsSection
