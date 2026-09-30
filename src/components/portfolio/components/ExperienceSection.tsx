@@ -14,7 +14,7 @@ const ExperienceSection = () => (
     className='w-full max-w-none bg-ink px-[clamp(1rem,4vw,4.5rem)] py-[clamp(6rem,11vw,10rem)] text-paper'
   >
     <div
-      className={`${experienceContentClass} mb-[clamp(3rem,7vw,6.5rem)] grid grid-cols-1 items-end gap-6 min-[1025px]:grid-cols-[minmax(0,1.7fr)_minmax(260px,0.55fr)] min-[1025px]:gap-16`}
+      className={`${experienceContentClass} mb-[clamp(3rem,7vw,6.5rem)] grid grid-cols-1 items-end gap-6 xl:grid-cols-[minmax(0,1.7fr)_minmax(260px,0.55fr)] xl:gap-16`}
       data-reveal
     >
       <div>
@@ -34,19 +34,19 @@ const ExperienceSection = () => (
     <div className={`${experienceContentClass} border-t border-paper/25`}>
       {experiences.map((experience, index) => (
         <article
-          className='grid grid-cols-[2.5rem_1fr] gap-[clamp(1rem,3vw,3.5rem)] border-b border-paper/25 py-[clamp(2.2rem,5vw,4.5rem)] max-[560px]:grid-cols-[2rem_1fr] min-[1025px]:grid-cols-[0.2fr_0.7fr_1.2fr_1fr]'
+          className='grid grid-cols-[2.5rem_1fr] gap-[clamp(1rem,3vw,3.5rem)] border-b border-paper/25 py-[clamp(2.2rem,5vw,4.5rem)] max-sm:grid-cols-[2rem_1fr] xl:grid-cols-[0.2fr_0.7fr_1.2fr_1fr]'
           key={experience.company}
           data-reveal
         >
           <div className='font-mono text-[0.7rem] text-acid'>0{index + 1}</div>
-          <div className='col-start-2 flex flex-row flex-wrap gap-[1.2rem] font-mono text-[0.63rem] tracking-[0.03em] text-paper/52 uppercase min-[1025px]:col-start-auto min-[1025px]:flex-col'>
+          <div className='col-start-2 flex flex-row flex-wrap gap-[1.2rem] font-mono text-[0.63rem] tracking-[0.03em] text-paper/52 uppercase xl:col-start-auto xl:flex-col'>
             <span>{experience.period}</span>
-            <span className='flex items-start gap-[0.4rem] max-[560px]:w-full'>
+            <span className='flex items-start gap-[0.4rem] max-sm:w-full'>
               <MapPin aria-hidden='true' />
               {experience.location}
             </span>
           </div>
-          <div className='col-start-2 min-[1025px]:col-start-auto'>
+          <div className='col-start-2 xl:col-start-auto'>
             <p className='mt-0 mb-2 text-[0.75rem] font-[650] text-acid'>
               {experience.company}
             </p>
@@ -57,7 +57,7 @@ const ExperienceSection = () => (
               {experience.summary}
             </p>
           </div>
-          <ul className='col-start-2 m-0 list-none p-0 text-[0.78rem] leading-[1.55] text-paper/72 min-[1025px]:col-start-auto'>
+          <ul className='col-start-2 m-0 list-none p-0 text-[0.78rem] leading-[1.55] text-paper/72 xl:col-start-auto'>
             {experience.highlights.map((highlight) => (
               <li
                 className='relative pb-[0.9rem] pl-4 before:absolute before:left-0 before:text-acid before:content-["·"]'

@@ -26,10 +26,10 @@ const SocialLink = ({ href, label, children }: SocialLinkProps) => (
 const ContactSection = () => (
   <section
     id='contact'
-    className='relative grid min-h-[720px] grid-cols-1 items-center gap-16 overflow-hidden bg-acid px-[max(clamp(1rem,4vw,4.5rem),calc((100vw-90rem)/2+4.5rem))] py-[clamp(6rem,11vw,10rem)] min-[1025px]:min-h-[80svh] min-[1025px]:grid-cols-[1.4fr_0.6fr]'
+    className='relative grid min-h-[720px] grid-cols-1 items-center gap-16 overflow-hidden bg-acid px-[max(clamp(1rem,4vw,4.5rem),calc((100vw-90rem)/2+4.5rem))] py-[clamp(6rem,11vw,10rem)] xl:min-h-[80svh] xl:grid-cols-[1.4fr_0.6fr]'
   >
     <div
-      className='absolute right-[-35vw] bottom-[-10vw] size-[95vw] rounded-full border border-ink/20 min-[1025px]:right-[-12vw] min-[1025px]:bottom-[-35vw] min-[1025px]:size-[65vw]'
+      className='absolute right-[-35vw] bottom-[-10vw] size-[95vw] rounded-full border border-ink/20 xl:right-[-12vw] xl:bottom-[-35vw] xl:size-[65vw]'
       aria-hidden='true'
     >
       <span className='absolute inset-[12%] rounded-full border border-ink/15' />
@@ -58,7 +58,7 @@ const ContactSection = () => (
     </div>
 
     <div
-      className='relative z-1 max-w-[360px] self-start pb-4 min-[1025px]:self-end'
+      className='relative z-1 max-w-[360px] self-start pb-4 xl:self-end'
       data-reveal
     >
       <p className='mt-0 mb-[1.8rem] text-[0.84rem] leading-[1.65]'>

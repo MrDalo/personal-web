@@ -78,13 +78,13 @@ const SiteHeader = () => {
   return (
     <header
       ref={headerRef}
-      className='absolute inset-x-0 top-0 z-100 mx-auto grid w-full max-w-[90rem] grid-cols-[1fr_auto] items-center border-b border-paper/24 px-[clamp(1rem,4vw,4.5rem)] py-[1.35rem] text-paper min-[1025px]:grid-cols-[1fr_auto_1fr]'
+      className='absolute inset-x-0 top-0 z-100 mx-auto grid w-full max-w-[90rem] grid-cols-[1fr_auto] items-center border-b border-paper/24 px-[clamp(1rem,4vw,4.5rem)] py-[1.35rem] text-paper xl:grid-cols-[1fr_auto_1fr]'
       data-nav
     >
       <Wordmark label='Dalibor Králik, home' />
 
       <nav
-        className='hidden items-center gap-[clamp(1.25rem,3vw,2.75rem)] min-[1025px]:flex'
+        className='hidden items-center gap-[clamp(1.25rem,3vw,2.75rem)] xl:flex'
         aria-label='Primary navigation'
       >
         {navigation.map((item) => (
@@ -99,7 +99,7 @@ const SiteHeader = () => {
       </nav>
 
       <a
-        className='hidden items-center justify-self-end gap-[0.6rem] font-mono text-[0.67rem] tracking-[0.03em] uppercase min-[1025px]:flex'
+        className='hidden items-center justify-self-end gap-[0.6rem] font-mono text-[0.67rem] tracking-[0.03em] uppercase xl:flex'
         href='mailto:dadokralik@gmail.com'
       >
         <span
@@ -111,7 +111,7 @@ const SiteHeader = () => {
 
       <button
         ref={menuButtonRef}
-        className='grid size-11 cursor-pointer place-items-center rounded-full border border-paper/30 bg-transparent min-[1025px]:hidden'
+        className='grid size-11 cursor-pointer place-items-center rounded-full border border-paper/30 bg-transparent xl:hidden'
         type='button'
         aria-expanded={menuOpen}
         aria-controls='mobile-navigation'
@@ -125,7 +125,7 @@ const SiteHeader = () => {
         <div
           ref={mobileMenuRef}
           id='mobile-navigation'
-          className='absolute top-[calc(100%+0.5rem)] right-4 left-4 block border border-paper/20 bg-ink/96 p-[1.2rem] shadow-[0_1.5rem_4rem_rgba(0,0,0,0.28)] backdrop-blur-[20px] min-[1025px]:hidden'
+          className='absolute top-[calc(100%+0.5rem)] right-4 left-4 block border border-paper/20 bg-ink/96 p-[1.2rem] shadow-[0_1.5rem_4rem_rgba(0,0,0,0.28)] backdrop-blur-[20px] xl:hidden'
         >
           <nav className='flex flex-col' aria-label='Mobile navigation'>
             {navigation.map((item, index) => (

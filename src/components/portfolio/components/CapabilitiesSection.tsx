@@ -19,10 +19,10 @@ const CapabilitiesSection = () => {
   return (
     <section
       ref={rootRef}
-      className={`${sectionClass} grid grid-cols-1 gap-[clamp(3rem,9vw,10rem)] min-[1025px]:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)]`}
+      className={`${sectionClass} grid grid-cols-1 gap-[clamp(3rem,9vw,10rem)] xl:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)]`}
     >
       <div
-        className='static self-start min-[1025px]:sticky min-[1025px]:top-28'
+        className='static self-start xl:sticky xl:top-28'
         data-reveal
       >
         <p className={`${sectionKickerClass} mb-[1.4rem] text-muted`}>
@@ -43,7 +43,7 @@ const CapabilitiesSection = () => {
       <div className='border-t border-ink'>
         {capabilities.map((capability) => (
           <article
-            className='grid grid-cols-[2rem_1fr] gap-4 border-b border-ink py-[clamp(2rem,4vw,4rem)] min-[561px]:grid-cols-[3rem_1fr]'
+            className='grid grid-cols-[2rem_1fr] gap-4 border-b border-ink py-[clamp(2rem,4vw,4rem)] sm:grid-cols-[3rem_1fr]'
             key={capability.index}
             data-capability
           >

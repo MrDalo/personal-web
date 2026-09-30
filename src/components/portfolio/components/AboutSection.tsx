@@ -22,10 +22,10 @@ const credentials = [
 const AboutSection = () => (
   <section
     id='about'
-    className='grid w-full max-w-none grid-cols-1 bg-paper-deep py-[clamp(6rem,11vw,10rem)] min-[1025px]:grid-cols-[minmax(280px,0.8fr)_minmax(0,1.2fr)]'
+    className='grid w-full max-w-none grid-cols-1 bg-paper-deep py-[clamp(6rem,11vw,10rem)] xl:grid-cols-[minmax(280px,0.8fr)_minmax(0,1.2fr)]'
   >
     <div
-      className='relative min-h-[min(110vw,720px)] overflow-hidden min-[1025px]:min-h-[760px]'
+      className='relative min-h-[min(110vw,720px)] overflow-hidden xl:min-h-[760px]'
       data-reveal
     >
       <Image
@@ -62,7 +62,7 @@ const AboutSection = () => (
         principle has guided my work across enterprise data, production AI
         tools, design systems, and client-facing products.
       </p>
-      <div className='grid grid-cols-1 gap-6 text-[0.88rem] leading-[1.7] text-muted min-[561px]:grid-cols-2'>
+      <div className='grid grid-cols-1 gap-6 text-[0.88rem] leading-[1.7] text-muted sm:grid-cols-2'>
         <p className='m-0'>
           I moved from SAP data warehousing into modern front-end engineering,
           then became the main front-end developer for an AI product used by
@@ -79,7 +79,7 @@ const AboutSection = () => (
       <dl className='mt-12 mb-0 border-t border-ink'>
         {credentials.map((credential) => (
           <div
-            className='grid grid-cols-1 gap-[0.4rem] border-b border-line py-4 min-[561px]:grid-cols-[0.35fr_1fr] min-[561px]:gap-4'
+            className='grid grid-cols-1 gap-[0.4rem] border-b border-line py-4 sm:grid-cols-[0.35fr_1fr] sm:gap-4'
             key={credential.label}
           >
             <dt className='font-mono text-[0.62rem] text-muted uppercase'>

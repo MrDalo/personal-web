@@ -10,7 +10,7 @@ const useProjectAnimations = (root: RefObject<HTMLElement | null>) => {
 
       media.add(
         {
-          desktop: '(min-width: 1025px)',
+          desktop: '(min-width: 64rem)',
           motionAllowed: '(prefers-reduced-motion: no-preference)',
           reduceMotion: '(prefers-reduced-motion: reduce)',
         },

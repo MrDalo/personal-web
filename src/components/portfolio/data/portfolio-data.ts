@@ -31,7 +31,7 @@ export const projects = [
       'https://www.researchgate.net/publication/389435761_Front-end_Testing_Framework_A_Practical_Guide',
     githubUrl:
       'https://github.com/MrDalo/frontend-testing-framework/tree/master',
-    tone: 'paper',
+    tone: 'violet',
   },
   {
     number: '03',
@@ -44,7 +44,7 @@ export const projects = [
     tech: ['Next.js', 'TypeScript', 'PostgreSQL', 'OAuth2'],
     liveUrl: 'https://statsly.vercel.app/',
     githubUrl: '',
-    tone: 'violet',
+    tone: 'paper',
   },
   {
     number: '04',
@@ -55,8 +55,8 @@ export const projects = [
       'A full-stack priority-management application designed and delivered by a three-person team, combining authenticated workflows with structured, type-safe task management.',
     result: 'Product engineering · Collaboration · UX',
     tech: ['Next.js', 'TypeScript', 'NextAuth', 'Zod'],
-    liveUrl: 'https://brainfree-v2.vercel.app/',
-    githubUrl: 'https://github.com/MrDalo/BrainfreeV2',
+    liveUrl: '',
+    githubUrl: '',
     tone: 'blue',
   },
   {
@@ -70,7 +70,7 @@ export const projects = [
     tech: ['Figma', 'Vite', 'Sass', 'JavaScript', 'Lottie'],
     liveUrl: '',
     githubUrl: '',
-    tone: 'paper',
+    tone: 'blue',
   },
   {
     number: '06',

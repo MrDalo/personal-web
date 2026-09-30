@@ -24,7 +24,7 @@ const SkillsMarquee = () => {
                 key={`${loop}-${skill}`}
               >
                 {skill}
-                <i aria-hidden='true'>✳</i>
+                <i aria-hidden='true'>✦</i>
               </span>
             ))}
           </div>

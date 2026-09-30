@@ -21,12 +21,12 @@ const projectToneClasses = {
 } as const
 
 const projectLayoutClasses = [
-  'min-[1025px]:col-span-7',
-  'min-[1025px]:col-span-5 min-[1025px]:mt-[clamp(4rem,10vw,10rem)]',
-  'min-[1025px]:col-span-5',
-  'min-[1025px]:col-span-7 min-[1025px]:mt-[clamp(3rem,7vw,7rem)]',
-  'min-[1025px]:col-span-6',
-  'min-[1025px]:col-span-6',
+  'xl:col-span-7',
+  'xl:col-span-5 xl:mt-[clamp(4rem,10vw,10rem)]',
+  'xl:col-span-5',
+  'xl:col-span-7 xl:mt-[clamp(3rem,7vw,7rem)]',
+  'xl:col-span-6',
+  'xl:col-span-6',
 ] as const
 
 type Project = (typeof projects)[number]
@@ -42,11 +42,11 @@ const ProjectCard = ({ project, layoutClass }: ProjectCardProps) => (
     data-project
   >
     <div
-      className={`relative grid min-h-[min(74vw,520px)] origin-center overflow-hidden p-[clamp(1rem,2vw,2rem)] will-change-transform min-[1025px]:min-h-[clamp(300px,37vw,570px)] ${projectToneClasses[project.tone]}`}
+      className={`relative grid min-h-[min(74vw,520px)] origin-center overflow-hidden p-[clamp(1rem,2vw,2rem)] will-change-transform xl:min-h-[clamp(300px,37vw,570px)] ${projectToneClasses[project.tone]}`}
       data-project-visual
     >
       <div
-        className='absolute inset-4 border border-ink/28 min-[561px]:inset-8'
+        className='absolute inset-4 border border-ink/28 sm:inset-8'
         aria-hidden='true'
       >
         <span className='absolute inset-x-0 top-1/2 h-px bg-ink/22' />
@@ -69,7 +69,7 @@ const ProjectCard = ({ project, layoutClass }: ProjectCardProps) => (
       </span>
     </div>
 
-    <div className='grid grid-cols-1 gap-6 pt-[1.3rem] min-[561px]:grid-cols-[1.1fr_1fr]'>
+    <div className='grid grid-cols-1 gap-6 pt-[1.3rem] sm:grid-cols-[1.1fr_1fr]'>
       <div>
         <p className='mt-0 mb-[0.45rem] font-mono text-[0.61rem] leading-[1.5] text-muted uppercase'>
           {project.result}
@@ -126,7 +126,7 @@ const ProjectsSection = () => {
   return (
     <section ref={rootRef} id='projects' className={sectionClass}>
       <div
-        className='mb-[clamp(3rem,7vw,6.5rem)] grid grid-cols-1 items-end gap-6 min-[1025px]:grid-cols-[minmax(0,1.7fr)_minmax(260px,0.55fr)] min-[1025px]:gap-16'
+        className='mb-[clamp(3rem,7vw,6.5rem)] grid grid-cols-1 items-end gap-6 xl:grid-cols-[minmax(0,1.7fr)_minmax(260px,0.55fr)] xl:gap-16'
         data-reveal
       >
         <div>
@@ -143,7 +143,7 @@ const ProjectsSection = () => {
         </p>
       </div>
 
-      <div className='grid grid-cols-12 gap-x-0 gap-y-18 min-[1025px]:gap-x-[clamp(1rem,2.5vw,2.5rem)] min-[1025px]:gap-y-[clamp(1.5rem,4vw,4rem)]'>
+      <div className='grid grid-cols-12 gap-x-0 gap-y-18 xl:gap-x-[clamp(1rem,2.5vw,2.5rem)] xl:gap-y-[clamp(1.5rem,4vw,4rem)]'>
         {projects.map((project, index) => (
           <ProjectCard
             key={project.number}

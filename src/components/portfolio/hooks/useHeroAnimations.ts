@@ -10,7 +10,7 @@ const useHeroAnimations = (root: RefObject<HTMLElement | null>) => {
 
       media.add(
         {
-          desktop: '(min-width: 1025px)',
+          desktop: '(min-width: 64rem)',
           finePointer: '(hover: hover) and (pointer: fine)',
           motionAllowed: '(prefers-reduced-motion: no-preference)',
           reduceMotion: '(prefers-reduced-motion: reduce)',

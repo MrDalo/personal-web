@@ -1,5 +1,12 @@
 @import 'tailwindcss';
 
+@theme {
+  --breakpoint-sm: 35rem;
+  --breakpoint-md: 48rem;
+  --breakpoint-lg: 56.25rem;
+  --breakpoint-xl: 64rem;
+}
+
 @theme inline {
   --color-ink: #121212;
   --color-paper: #f3f0e9;

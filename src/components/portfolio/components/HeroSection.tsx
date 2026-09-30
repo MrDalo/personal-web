@@ -15,7 +15,7 @@ const HeroSection = () => {
     <section
       ref={rootRef}
       id='top'
-      className='relative min-h-0 overflow-hidden bg-ink text-paper min-[1025px]:min-h-[min(980px,100svh)]'
+      className='relative min-h-0 overflow-hidden bg-ink text-paper xl:min-h-[min(980px,100svh)]'
       data-hero
     >
       <div
@@ -27,7 +27,7 @@ const HeroSection = () => {
         data-pointer-glow
         aria-hidden='true'
       />
-      <div className='relative z-1 mx-auto grid min-h-0 w-full max-w-[90rem] grid-cols-1 grid-rows-[auto] gap-8 px-[clamp(1rem,4vw,4.5rem)] pt-32 pb-[clamp(2rem,5vh,4.5rem)] max-[560px]:gap-12 min-[1025px]:min-h-[min(980px,100svh)] min-[1025px]:grid-cols-[minmax(0,1.5fr)_minmax(260px,0.58fr)] min-[1025px]:grid-rows-[1fr_auto] min-[1025px]:gap-x-[clamp(2rem,6vw,7rem)] min-[1025px]:gap-y-8 min-[1025px]:pt-[clamp(8.5rem,16vh,12rem)]'>
+      <div className='relative z-1 mx-auto grid min-h-0 w-full max-w-[90rem] grid-cols-1 grid-rows-[auto] gap-8 px-[clamp(1rem,4vw,4.5rem)] pt-32 pb-[clamp(2rem,5vh,4.5rem)] max-sm:gap-12 xl:min-h-[min(980px,100svh)] xl:grid-cols-[minmax(0,1.5fr)_minmax(260px,0.58fr)] xl:grid-rows-[1fr_auto] xl:gap-x-[clamp(2rem,6vw,7rem)] xl:gap-y-8 xl:pt-[clamp(8.5rem,16vh,12rem)]'>
         <div className='self-center'>
           <p
             className={`${sectionKickerClass} mb-[clamp(1.8rem,4vh,3.25rem)] text-paper/58`}
@@ -35,18 +35,18 @@ const HeroSection = () => {
           >
             Front-end engineer · Brno / Central Europe
           </p>
-          <h1 className='m-0 max-w-[960px] text-[clamp(3.8rem,13.5vw,7rem)] leading-[0.82] font-[630] tracking-[-0.085em] max-[560px]:text-[clamp(3.35rem,17vw,5.8rem)] max-[560px]:leading-[0.87] min-[1025px]:text-[clamp(4rem,8.9vw,9.4rem)]'>
+          <h1 className='m-0 max-w-[960px] text-[clamp(3.8rem,13.5vw,7rem)] leading-[0.82] font-[630] tracking-[-0.085em] max-sm:text-[clamp(3.35rem,17vw,5.8rem)] max-sm:leading-[0.87] xl:text-[clamp(4rem,8.9vw,9.4rem)]'>
             <span className='block overflow-hidden pr-[0.08em]'>
               <span
-                className='block pb-[0.08em] will-change-transform'
+                className='block pb-[0.22em] will-change-transform'
                 data-intro='line'
               >
                 Digital products
               </span>
             </span>
-            <span className='block overflow-hidden pr-[0.08em] font-serif text-acid italic tracking-[-0.07em]'>
+            <span className='-mt-[0.34em] block overflow-hidden pr-[0.08em] font-serif text-acid italic tracking-[-0.07em]'>
               <span
-                className='block pb-[0.08em] will-change-transform'
+                className='block pt-[0.2em] sm:pt-[0.35em] pb-[0.08em] will-change-transform'
                 data-intro='line'
               >
                 with intent.
@@ -64,18 +64,18 @@ const HeroSection = () => {
             </p>
           </div>
           <div
-            className='mt-8 flex flex-wrap gap-[0.8rem] max-[560px]:flex-col max-[560px]:items-stretch'
+            className='mt-8 flex flex-wrap gap-[0.8rem] max-sm:flex-col max-sm:items-stretch'
             data-intro='copy'
           >
             <a
-              className='inline-flex min-h-13 items-center justify-center gap-3 rounded-full border border-transparent bg-acid px-[1.2rem] py-[0.85rem] text-[0.84rem] font-bold text-ink transition-[color,background-color,border-color,transform] duration-180 hover:-translate-y-0.5 hover:bg-paper max-[560px]:w-full'
+              className='inline-flex min-h-13 items-center justify-center gap-3 rounded-full border border-transparent bg-acid px-[1.2rem] py-[0.85rem] text-[0.84rem] font-bold text-ink transition-[color,background-color,border-color,transform] duration-180 hover:-translate-y-0.5 hover:bg-paper max-sm:w-full'
               href='#projects'
             >
               Explore selected work
               <ArrowDown aria-hidden='true' />
             </a>
             <a
-              className='inline-flex min-h-13 items-center justify-center gap-3 rounded-full border border-paper/28 px-[1.2rem] py-[0.85rem] text-[0.84rem] font-bold text-paper transition-[color,background-color,border-color,transform] duration-180 hover:-translate-y-0.5 hover:border-paper hover:bg-paper/8 max-[560px]:w-full'
+              className='inline-flex min-h-13 items-center justify-center gap-3 rounded-full border border-paper/28 px-[1.2rem] py-[0.85rem] text-[0.84rem] font-bold text-paper transition-[color,background-color,border-color,transform] duration-180 hover:-translate-y-0.5 hover:border-paper hover:bg-paper/8 max-sm:w-full'
               href='/Dalibor_Kralik_CV.pdf'
               download
             >
@@ -86,7 +86,7 @@ const HeroSection = () => {
         </div>
 
         <div
-          className='relative ml-auto w-[min(88vw,450px)] max-w-[430px] self-center min-[1025px]:ml-0 min-[1025px]:w-auto'
+          className='relative ml-auto w-[min(88vw,450px)] max-w-[430px] self-center xl:ml-0 xl:w-auto'
           data-intro='portrait'
         >
           <div className='relative aspect-[0.74] overflow-hidden bg-[#272727] [clip-path:polygon(0_0,88%_0,100%_10%,100%_100%,0_100%)]'>
@@ -114,18 +114,18 @@ const HeroSection = () => {
         </div>
 
         <aside
-          className='col-span-full grid grid-cols-[4rem_1fr] items-end gap-6 text-paper/58 max-[560px]:grid-cols-1 min-[1025px]:grid-cols-[minmax(4rem,1fr)_minmax(260px,520px)_auto]'
+          className='col-span-full grid grid-cols-[4rem_1fr] items-end gap-6 text-paper/58 max-sm:grid-cols-1 xl:grid-cols-[minmax(4rem,1fr)_minmax(260px,520px)_auto]'
           data-intro='note'
         >
           <span
-            className='mb-2 h-px bg-paper/22 max-[560px]:w-16'
+            className='mb-2 h-px bg-paper/22 max-sm:w-16'
             aria-hidden='true'
           />
           <p className='m-0 text-[0.84rem] leading-[1.6]'>
             Currently leading front-end modernization, shared component
             infrastructure, and AI-enabled engineering workflows at SONET.
           </p>
-          <span className='hidden text-right font-mono text-[0.62rem] tracking-[0.05em] uppercase min-[1025px]:block'>
+          <span className='hidden text-right font-mono text-[0.62rem] tracking-[0.05em] uppercase xl:block'>
             4+ years of crafting production software
           </span>
         </aside>

@@ -159,7 +159,7 @@ const PrivacyNotice = () => (
       id='privacy-content'
       className='mx-auto w-full max-w-[90rem] px-[clamp(1rem,4vw,4.5rem)] pt-[clamp(4.5rem,9vw,8rem)] pb-[clamp(5rem,10vw,9rem)]'
     >
-      <div className='grid gap-8 border-b border-line pb-[clamp(3rem,7vw,6rem)] min-[901px]:grid-cols-[0.7fr_1.3fr]'>
+      <div className='grid gap-8 border-b border-line pb-[clamp(3rem,7vw,6rem)] lg:grid-cols-[0.7fr_1.3fr]'>
         <p className="m-0 font-mono text-[0.68rem] tracking-[0.09em] uppercase before:mr-2 before:text-acid before:content-['↳']">
           Privacy notice
         </p>
@@ -180,7 +180,7 @@ const PrivacyNotice = () => (
       <div className='divide-y divide-line'>
         {noticeSections.map((section) => (
           <section
-            className='grid gap-5 py-[clamp(2.5rem,5vw,4.5rem)] min-[901px]:grid-cols-[0.18fr_0.52fr_1.3fr]'
+            className='grid gap-5 py-[clamp(2.5rem,5vw,4.5rem)] lg:grid-cols-[0.18fr_0.52fr_1.3fr]'
             key={section.number}
             aria-labelledby={`privacy-${section.number}`}
           >
@@ -203,7 +203,7 @@ const PrivacyNotice = () => (
         ))}
       </div>
 
-      <aside className='mt-[clamp(2rem,4vw,4rem)] grid gap-5 bg-ink p-[clamp(1.5rem,4vw,3.5rem)] text-paper min-[701px]:grid-cols-[0.8fr_1.2fr]'>
+      <aside className='mt-[clamp(2rem,4vw,4rem)] grid gap-5 bg-ink p-[clamp(1.5rem,4vw,3.5rem)] text-paper md:grid-cols-[0.8fr_1.2fr]'>
         <p className='m-0 font-mono text-[0.65rem] tracking-[0.06em] text-acid uppercase'>
           Questions or requests
         </p>

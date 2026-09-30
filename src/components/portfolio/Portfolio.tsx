@@ -21,7 +21,7 @@ const Portfolio = () => {
   return (
     <div
       ref={rootRef}
-      className='relative w-full min-w-0 overflow-clip bg-paper text-ink [background-image:linear-gradient(90deg,transparent_49.95%,rgba(18,18,18,0.04)_50%)] [background-position:center] [background-size:min(100%,90rem)_100%] [&_svg]:size-[1.1em] [&_svg]:[stroke-width:1.75]'
+      className='relative w-full min-w-0 overflow-clip bg-paper text-ink xl:[background-image:linear-gradient(90deg,transparent_50%,var(--color-paper-deep)_50%)] [&_svg]:size-[1.1em] [&_svg]:[stroke-width:1.75]'
     >
       <SkipLink />
       <ScrollProgress />
