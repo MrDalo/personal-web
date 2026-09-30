@@ -30,8 +30,8 @@ const usePortfolioAnimations = (root: RefObject<HTMLDivElement | null>) => {
           })
 
           intro
-            .from('[data-nav]', { y: -28, autoAlpha: 0 }, 0)
-            .from('[data-intro="eyebrow"]', { y: 20, autoAlpha: 0 }, '>-0.3')
+            .from('[data-nav]', { y: -28, opacity: 0 }, 0)
+            .from('[data-intro="eyebrow"]', { y: 20, opacity: 0 }, '>-0.3')
             .from(
               '[data-intro="line"]',
               { yPercent: 105, rotate: 2, stagger: 0.1 },
@@ -39,7 +39,7 @@ const usePortfolioAnimations = (root: RefObject<HTMLDivElement | null>) => {
             )
             .from(
               '[data-intro="copy"]',
-              { y: 24, autoAlpha: 0, stagger: 0.08 },
+              { y: 24, opacity: 0, stagger: 0.08 },
               '<0.35',
             )
             .from(
@@ -47,14 +47,14 @@ const usePortfolioAnimations = (root: RefObject<HTMLDivElement | null>) => {
               { clipPath: 'inset(0 0 100% 0)', scale: 1.08 },
               '<0.05',
             )
-            .from('[data-intro="note"]', { x: 16, autoAlpha: 0 }, '>-0.2')
+            .from('[data-intro="note"]', { x: 16, opacity: 0 }, '>-0.2')
 
           gsap.utils
             .toArray<HTMLElement>('[data-reveal]')
             .forEach((element) => {
               gsap.from(element, {
                 y: desktop ? 56 : 30,
-                autoAlpha: 0,
+                opacity: 0,
                 duration: 0.9,
                 ease: 'power3.out',
                 scrollTrigger: {
