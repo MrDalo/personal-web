@@ -1,6 +1,19 @@
 export const projects = [
   {
     number: '01',
+    title: 'The Long Silence',
+    category: 'AI strategy game',
+    year: '2026',
+    description:
+      'A competitive web strategy game where humans write standing orders and AI agents play on their behalf over MCP, while the web app shows everything and controls nothing.',
+    result: 'Game design · MCP · Full-stack architecture',
+    tech: ['Next.js', 'NestJS', 'TypeScript', 'MCP', 'PostgreSQL', 'Redis'],
+    liveUrl: '',
+    githubUrl: '',
+    tone: 'blue',
+  },
+  {
+    number: '02',
     title: 'CloakForge',
     category: 'Web3 product',
     year: '2025',
@@ -19,7 +32,7 @@ export const projects = [
     tone: 'acid',
   },
   {
-    number: '02',
+    number: '03',
     title: 'Front-end Testing Framework',
     category: 'Research & tooling',
     year: '2025',
@@ -34,7 +47,7 @@ export const projects = [
     tone: 'violet',
   },
   {
-    number: '03',
+    number: '04',
     title: 'Statsly',
     category: 'Analytics platform',
     year: '2024',
@@ -47,7 +60,7 @@ export const projects = [
     tone: 'paper',
   },
   {
-    number: '04',
+    number: '05',
     title: 'BrainFree v2',
     category: 'Team product',
     year: '2023',
@@ -60,7 +73,7 @@ export const projects = [
     tone: 'blue',
   },
   {
-    number: '05',
+    number: '06',
     title: 'JINAG Hackathon 2023',
     category: 'Client event website',
     year: '2023',
@@ -73,7 +86,7 @@ export const projects = [
     tone: 'blue',
   },
   {
-    number: '06',
+    number: '07',
     title: 'Dny AI 2022',
     category: 'Client event website',
     year: '2022',
