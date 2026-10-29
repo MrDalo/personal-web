@@ -44,7 +44,7 @@ export const projects = [
       'https://www.researchgate.net/publication/389435761_Front-end_Testing_Framework_A_Practical_Guide',
     githubUrl:
       'https://github.com/MrDalo/frontend-testing-framework/tree/master',
-    tone: 'violet',
+    tone: 'paper',
   },
   {
     number: '04',
@@ -57,7 +57,7 @@ export const projects = [
     tech: ['Next.js', 'TypeScript', 'PostgreSQL', 'OAuth2'],
     liveUrl: 'https://statsly.vercel.app/',
     githubUrl: '',
-    tone: 'paper',
+    tone: 'violet',
   },
   {
     number: '05',
@@ -83,7 +83,7 @@ export const projects = [
     tech: ['Figma', 'Vite', 'Sass', 'JavaScript', 'Lottie'],
     liveUrl: '',
     githubUrl: '',
-    tone: 'blue',
+    tone: 'acid',
   },
   {
     number: '07',

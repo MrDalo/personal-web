@@ -27,6 +27,7 @@ const projectLayoutClasses = [
   'xl:col-span-7 xl:mt-[clamp(3rem,7vw,7rem)]',
   'xl:col-span-6',
   'xl:col-span-6',
+  'xl:col-span-7',
 ] as const
 
 type Project = (typeof projects)[number]
