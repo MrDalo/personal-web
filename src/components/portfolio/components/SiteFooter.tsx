@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import PrivacySettingsButton from '@/features/privacy/components/PrivacySettingsButton'
 import Wordmark from './Wordmark'
 
 const SiteFooter = () => (
@@ -20,6 +21,10 @@ const SiteFooter = () => (
       >
         Privacy
       </Link>
+      <span className='text-paper/25' aria-hidden='true'>
+        /
+      </span>
+      <PrivacySettingsButton className='cursor-pointer uppercase underline decoration-paper/30 underline-offset-4 transition-colors hover:text-acid' />
     </div>
     <p className='m-0 justify-self-end font-mono text-[0.58rem] tracking-[0.03em] text-paper/55 uppercase'>
       © {new Date().getFullYear()} Dalibor Králik

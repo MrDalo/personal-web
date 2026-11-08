@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { siteConfig } from '@/app/site-config'
 import Wordmark from '@/components/portfolio/components/Wordmark'
+import PrivacySettingsButton from './PrivacySettingsButton'
 
 const noticeSections = [
   {
@@ -21,14 +22,41 @@ const noticeSections = [
   },
   {
     number: '02',
+    title: 'Hosting and emails',
+    content: (
+      <>
+        <p>
+          This website is hosted by Vercel Inc., 440 N Barranca Ave #4133,
+          Covina, CA 91723, USA. To deliver pages and protect the site against
+          abuse, Vercel processes technical request data such as IP address,
+          time of request, and browser details, and keeps these logs only for a
+          short period set by its plan limits (typically 1 hour to 1 day). The
+          legal basis is my legitimate interest in running a secure, working
+          website (Article 6(1)(f) GDPR).
+        </p>
+        <p>
+          If you email me, I use your message only to reply, based on my
+          legitimate interest in answering you (Article 6(1)(f) GDPR), and
+          delete the conversation when it is no longer needed, at the latest 2
+          years after the last message.
+        </p>
+      </>
+    ),
+  },
+  {
+    number: '03',
     title: 'What is measured',
     content: (
       <>
         <p>
-          This website uses Vercel Web Analytics to understand aggregate site
-          usage. A page view may include the time of the visit, page URL,
-          referrer, filtered query parameters, approximate location, operating
-          system, browser, and device type.
+          Only if you click &ldquo;Accept&rdquo; in the consent banner, this
+          website loads Vercel Web Analytics to understand aggregate site usage.
+          If you reject or do not decide, the analytics script is not loaded at
+          all. A page view may include the time of the visit, page URL,
+          referrer, filtered query parameters, approximate location derived from
+          the IP address (country, region, city), operating system, browser, and
+          device type. The IP address itself is not stored by the analytics
+          service.
         </p>
         <p>
           I do not send names, email addresses, account identifiers, or custom
@@ -38,7 +66,7 @@ const noticeSections = [
     ),
   },
   {
-    number: '03',
+    number: '04',
     title: 'Cookies and identification',
     content: (
       <>
@@ -49,28 +77,37 @@ const noticeSections = [
           websites or days and is discarded after 24 hours.
         </p>
         <p>
-          This website does not intentionally use cookies or browser storage for
-          advertising, profiling, or cross-site tracking. For that reason, no
-          cookie consent banner is shown.
+          This website does not use cookies or browser storage for advertising,
+          profiling, or cross-site tracking. The only thing stored in your
+          browser is your analytics choice (localStorage key
+          &ldquo;portfolio-analytics-consent&rdquo;), so you are not asked on
+          every visit. Fonts are served from this website, not from Google.
         </p>
       </>
     ),
   },
   {
-    number: '04',
+    number: '05',
     title: 'Purpose and legal basis',
     content: (
-      <p>
-        The analytics help me understand which pages are useful and whether the
-        website performs well across devices. If any analytics information is
-        considered personal data, the legal basis is my legitimate interest
-        under Article 6(1)(f) GDPR in operating and improving this portfolio.
-        The reporting is limited and does not create advertising profiles.
-      </p>
+      <>
+        <p>
+          The analytics help me understand which pages are useful and whether
+          the website performs well across devices. The legal basis is your
+          consent under Article 6(1)(a) GDPR and Section 89(3) of Czech Act No.
+          127/2005 Coll. on Electronic Communications. The reporting is limited
+          and does not create advertising profiles.
+        </p>
+        <p>
+          You can withdraw consent at any time via &ldquo;Privacy
+          settings&rdquo; in the footer. Withdrawal does not affect processing
+          that happened before it.
+        </p>
+      </>
     ),
   },
   {
-    number: '05',
+    number: '06',
     title: 'Service provider and transfers',
     content: (
       <>
@@ -97,27 +134,38 @@ const noticeSections = [
     ),
   },
   {
-    number: '06',
+    number: '07',
     title: 'Retention',
     content: (
       <p>
         Vercel states that its daily visitor identifier is discarded after 24
-        hours. Aggregated analytics remain available according to the reporting
-        period and retention rules of the Vercel plan in use. Analytics will be
+        hours. Aggregated analytics remain available for the reporting window of
+        the Vercel plan in use (one month on the Hobby plan). Analytics will be
         disabled or the associated data deleted when it is no longer needed for
         the purposes described here.
       </p>
     ),
   },
   {
-    number: '07',
+    number: '08',
     title: 'Your rights',
     content: (
       <>
         <p>
           Where GDPR applies, you may request access, correction, deletion,
-          restriction, or portability of your personal data. You may also object
-          to processing based on legitimate interests.
+          restriction, or portability of your personal data, and withdraw your
+          analytics consent at any time via &ldquo;Privacy settings&rdquo;.
+        </p>
+        <p>
+          <strong>Right to object:</strong> you may object at any time, on
+          grounds relating to your particular situation, to processing based on
+          my legitimate interests (hosting logs and email replies) under Article
+          21 GDPR.
+        </p>
+        <p>
+          You are not legally or contractually required to provide any personal
+          data, and no automated decision-making or profiling within the meaning
+          of Article 22 GDPR takes place.
         </p>
         <p>
           Because the analytics are aggregated and are not linked to a name or
@@ -172,7 +220,7 @@ const PrivacyNotice = () => (
             this portfolio performs. It applies to {siteConfig.url}.
           </p>
           <p className='mt-5 mb-0 font-mono text-[0.65rem] tracking-[0.04em] text-muted uppercase'>
-            Effective 29 July 2026
+            Effective 8 November 2026
           </p>
         </div>
       </div>
@@ -227,12 +275,15 @@ const PrivacyNotice = () => (
         <span>
           © {new Date().getFullYear()} {siteConfig.name}
         </span>
-        <Link
-          className='underline decoration-ink/25 underline-offset-4'
-          href='/'
-        >
-          Portfolio
-        </Link>
+        <span className='flex gap-4'>
+          <PrivacySettingsButton className='cursor-pointer uppercase underline decoration-ink/25 underline-offset-4' />
+          <Link
+            className='underline decoration-ink/25 underline-offset-4'
+            href='/'
+          >
+            Portfolio
+          </Link>
+        </span>
       </div>
     </footer>
   </div>

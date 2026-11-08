@@ -5,14 +5,14 @@ import { siteConfig } from '../site-config'
 export const metadata: Metadata = {
   title: 'Privacy Notice',
   description:
-    'How this portfolio uses privacy-friendly, cookie-free Vercel Web Analytics.',
+    'How this portfolio uses consent-based, cookie-free Vercel Web Analytics.',
   alternates: {
     canonical: `${siteConfig.url}/privacy`,
   },
   openGraph: {
     title: `Privacy Notice | ${siteConfig.name}`,
     description:
-      'How this portfolio uses privacy-friendly, cookie-free Vercel Web Analytics.',
+      'How this portfolio uses consent-based, cookie-free Vercel Web Analytics.',
     url: `${siteConfig.url}/privacy`,
   },
 }
