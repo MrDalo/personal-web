@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
 import type { ReactNode } from 'react'
-import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 import { siteFontVariables } from './site-fonts'
 import { siteMetadata } from './site-metadata'
+import ConsentBanner from '@/features/privacy/components/ConsentBanner'
+import ConsentedAnalytics from '@/features/privacy/components/ConsentedAnalytics'
 
 export const metadata: Metadata = siteMetadata
 
@@ -16,7 +17,8 @@ const RootLayout = ({ children }: RootLayoutProps) => (
     <body className={`${siteFontVariables} antialiased`}>
       <>
         {children}
-        <Analytics />
+        <ConsentBanner />
+        <ConsentedAnalytics />
       </>
     </body>
   </html>

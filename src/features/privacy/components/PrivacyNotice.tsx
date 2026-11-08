@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { siteConfig } from '@/app/site-config'
 import Wordmark from '@/components/portfolio/components/Wordmark'
+import PrivacySettingsButton from './PrivacySettingsButton'
 
 const noticeSections = [
   {
@@ -25,8 +26,10 @@ const noticeSections = [
     content: (
       <>
         <p>
-          This website uses Vercel Web Analytics to understand aggregate site
-          usage. A page view may include the time of the visit, page URL,
+          Only if you click &ldquo;Accept&rdquo; in the consent banner, this
+          website loads Vercel Web Analytics to understand aggregate site usage.
+          If you reject or do not decide, the analytics script is not loaded at
+          all. A page view may include the time of the visit, page URL,
           referrer, filtered query parameters, approximate location, operating
           system, browser, and device type.
         </p>
@@ -49,9 +52,11 @@ const noticeSections = [
           websites or days and is discarded after 24 hours.
         </p>
         <p>
-          This website does not intentionally use cookies or browser storage for
-          advertising, profiling, or cross-site tracking. For that reason, no
-          cookie consent banner is shown.
+          This website does not use cookies or browser storage for advertising,
+          profiling, or cross-site tracking. The only thing stored in your
+          browser is your analytics choice (localStorage key
+          &ldquo;portfolio-analytics-consent&rdquo;), so you are not asked on
+          every visit. Fonts are served from this website, not from Google.
         </p>
       </>
     ),
@@ -60,13 +65,20 @@ const noticeSections = [
     number: '04',
     title: 'Purpose and legal basis',
     content: (
-      <p>
-        The analytics help me understand which pages are useful and whether the
-        website performs well across devices. If any analytics information is
-        considered personal data, the legal basis is my legitimate interest
-        under Article 6(1)(f) GDPR in operating and improving this portfolio.
-        The reporting is limited and does not create advertising profiles.
-      </p>
+      <>
+        <p>
+          The analytics help me understand which pages are useful and whether
+          the website performs well across devices. The legal basis is your
+          consent under Article 6(1)(a) GDPR and Section 89(3) of Czech Act No.
+          127/2005 Coll. on Electronic Communications. The reporting is limited
+          and does not create advertising profiles.
+        </p>
+        <p>
+          You can withdraw consent at any time via &ldquo;Privacy
+          settings&rdquo; in the footer. Withdrawal does not affect processing
+          that happened before it.
+        </p>
+      </>
     ),
   },
   {
@@ -172,7 +184,7 @@ const PrivacyNotice = () => (
             this portfolio performs. It applies to {siteConfig.url}.
           </p>
           <p className='mt-5 mb-0 font-mono text-[0.65rem] tracking-[0.04em] text-muted uppercase'>
-            Effective 29 July 2026
+            Effective 8 November 2026
           </p>
         </div>
       </div>
@@ -227,12 +239,15 @@ const PrivacyNotice = () => (
         <span>
           © {new Date().getFullYear()} {siteConfig.name}
         </span>
-        <Link
-          className='underline decoration-ink/25 underline-offset-4'
-          href='/'
-        >
-          Portfolio
-        </Link>
+        <span className='flex gap-4'>
+          <PrivacySettingsButton className='cursor-pointer uppercase underline decoration-ink/25 underline-offset-4' />
+          <Link
+            className='underline decoration-ink/25 underline-offset-4'
+            href='/'
+          >
+            Portfolio
+          </Link>
+        </span>
       </div>
     </footer>
   </div>
